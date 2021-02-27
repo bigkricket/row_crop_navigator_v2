@@ -1,0 +1,8 @@
+prefix=/home/rubaduben/github_robots/row_crop_navigator_v2/install
+
+Name: agbot_description
+Description: Description of agbot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

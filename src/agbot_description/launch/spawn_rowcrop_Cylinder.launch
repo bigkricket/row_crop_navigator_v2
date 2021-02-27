@@ -1,0 +1,5 @@
+<launch>
+  <param name="rowcrop_Cylinder_description" command="$(find xacro)/xacro --inorder '$(find agbot_description)/urdf/rowcrop_Cylinder.urdf.xacro'" />
+
+  <node name="spawn_rowcrop_Cylinder" pkg="gazebo_ros" type="spawn_model" args="-param rowcrop_Cylinder_description -urdf -model rowcrop_Cylinder" respawn="false" />
+</launch>

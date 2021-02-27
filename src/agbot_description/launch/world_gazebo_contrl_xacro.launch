@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+  <param name="agbot_description" command="$(find xacro)/xacro --inorder $(find agbot_description)/urdf/robot_base.urdf.xacro" />
+  <include file="$(find gazebo_ros)/launch/shapes_world.launch"/>
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param agbot_description -urdf -model robot_base" />
+  <rosparam command="load" file="$(find agbot_description)/config/control.yaml" />
+  <node name="base_controller_spawner" pkg="controller_manager" type="spawner" args="robot_base_joint_publisher robot_base_velocity_controller"/>
+
+</launch>

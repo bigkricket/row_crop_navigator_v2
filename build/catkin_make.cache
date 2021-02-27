@@ -1,0 +1,2 @@
+agbot_description
+-DCATKIN_DEVEL_PREFIX=/home/rubaduben/github_robots/row_crop_navigator_v2/devel -DCMAKE_INSTALL_PREFIX=/home/rubaduben/github_robots/row_crop_navigator_v2/install -G Unix Makefiles

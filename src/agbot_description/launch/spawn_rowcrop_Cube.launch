@@ -1,0 +1,5 @@
+<launch>
+  <param name="rowcrop_Cube_description" command="$(find xacro)/xacro --inorder '$(find agbot_description)/urdf/rowcrop_Cube.urdf.xacro'" />
+
+  <node name="spawn_rowcrop_Cube" pkg="gazebo_ros" type="spawn_model" args="-param rowcrop_Cube_description -urdf -model rowcrop_Cube" respawn="false" />
+</launch>
