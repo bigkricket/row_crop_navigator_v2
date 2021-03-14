@@ -5,8 +5,8 @@
 <!--############################# ROS-CONTROL #########################################-->
 <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/</robotNamespace>
       <robotParam>/agbot_description</robotParam>
+      <robotNamespace>/</robotNamespace>
       <controlPeriod>0.001</controlPeriod>
       <legacyModeNS>false</legacyModeNS>
     </plugin>
@@ -34,6 +34,13 @@
         <rosDebugLevel>Debug</rosDebugLevel>
       </plugin>
 </gazebo>
+
+<!-- front axle controller -->
+<!-- <Gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotParam>/agbot_description</robotParam>
+  </plugin>
+</Gazebo> -->
 <!--############################# Wheel friction #########################################-->
 <xacro:macro name="wheel_friction" params="prefix ">
 

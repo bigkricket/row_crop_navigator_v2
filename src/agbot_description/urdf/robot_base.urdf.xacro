@@ -62,6 +62,9 @@
 <xacro:base_transmission prefix="rear_left"/>
 <xacro:base_transmission prefix="rear_right"/>
 
+<!-- declaring front actuator -->
+<xacro:front_transmission/>
+
 <!-- wheel friction -->
 <xacro:wheel_friction prefix="front_left"/>
 <xacro:wheel_friction prefix="front_right"/>
