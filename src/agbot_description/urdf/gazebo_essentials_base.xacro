@@ -5,7 +5,7 @@
 <!--############################# ROS-CONTROL #########################################-->
 <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotParam>/agbot_description</robotParam>
+      <robotParam>/robot_description</robotParam>
       <robotNamespace>/</robotNamespace>
       <controlPeriod>0.001</controlPeriod>
       <legacyModeNS>false</legacyModeNS>
